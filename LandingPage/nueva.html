@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petfood Discount</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Petfood Discount</span>
+        </div>
+        <div class="cta-button-container">
+            <a href="#formulario" class="cta-button">Obtener Descuento Ahora -30%</a>
+        </div>
+        <nav>
+            <a href="#Home">Inicio</a>
+            <a href="#about">Acerca-de</a>
+            <a href="">servicios</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+        <div class="home" id="Home">
+        <h1>Bienvenidos a Petfood Discount</h1>
+        <span>Lo que deseas para tus mascotas.</span>
+        </div>
+</div>
+    <div class="about" id="about">
+        <h3 class="title">
+            Acerca de nosotros
+        </h3>
+        <hr>
+        <p class="descripcion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, animi?
+        </p>
+        <div class="info">
+            <section class="img-group">
+                <img class="imagen-1" src="img/mascotas.jpg" alt="PyG">
+            </section>
+
+            <section class="info-group">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, officia?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <br>
+                <a id="btn-about" href="#contacto">Solicita nuestros servicios</a>
+            </section>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/gato.jpg" alt="imagen-card">
+        <div class="card-body">
+            <h5 class="card-title">Alimentos</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          
+        </div>
+      </div>
+
+
+<section id="formulario">
+    <h2>Completa el formulario para recibir tu descuento -30%</h2>
+    <form action="/procesar_formulario.php" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre" required><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="Apellido" placeholder="Apellido" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required><br><br>
+        <label for="numero">Numero tel:</label>
+        <input type="number" name="numero" id="numero" placeholder="(opcional)"><br><br>
+        <div class="button-container">
+           <button class="button" type="submit">Enviar</button>
+           <button class="button" type="reset">Limpiar</button>
+        </div>
+        
+    </form>
+</section>
+
+
+</body>
+
+</html>

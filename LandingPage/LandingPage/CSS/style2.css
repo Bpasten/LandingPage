@@ -1,0 +1,366 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*Habilitar un comportamiento de desplazamiento suave*/
+}
+
+/* Body Styles */
+body{
+  background-color: rgba(145, 245, 252, 0.803); /*Color de fondo*/
+    width: 100%;
+    height: auto;
+
+}
+/* Header Styles */
+header{
+    display: flex; /*Establece un contenedor flexible*/
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; /*Establece la pila de elementos*/
+    background-color: rgb(0, 0, 0); /*Color de fondo*/
+}
+
+section {
+    background: #8bcceffe; /*Color de fondo*/
+    padding: 20px;
+    text-align: center;
+  }
+
+.cta-button {
+    background: linear-gradient(102deg,rgb(249, 86, 4), rgb(255, 0, 0)); /*Color de fondo*/
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    width: 230px;  
+    text-decoration: none;
+    animation: pulse 0.3s infinite; /*Animación*/
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold; /*Establece el grosor de la fuente*/
+}
+
+.cta-button-container {
+  display: flex; /*Establece un contenedor flexible*/
+  justify-content: center; /*Alinea el contenido del contenedor flexible en el centro*/
+  margin-top: 20px; 
+}
+
+.imagen-1{
+  view-timeline: --imagen1; 
+  view-timeline-axis: block; 
+  animation-timeline: --imagen1;
+  animation-name: show; /*Nombre de la animación*/
+  margin-right: 25px;
+  width: 300px;
+  border-radius: 100px;
+}
+
+
+.button:hover{
+    transition-duration: 0.6s; /*Duración de la transición*/
+    background: rgb(255, 3, 3);
+    color: white;
+    cursor: pointer;
+    border: none;
+  } 
+  
+  .h1{ /*Estilo de la etiqueta h1*/
+    margin: left;
+}
+
+.logo{ /*Estilo de la clase logo*/
+    display: flex; 
+    flex-direction: row; /*Establece la dirección de los elementos flexibles*/
+    align-items: center; /*Alinea los elementos flexibles en el centro*/
+    width: 50%;
+    margin: 32px;
+}
+
+.logo span{ /*Estilo de la etiqueta span*/ /*donde se pone el nombre de la pagina*/
+    color: blue;
+    font-size: 20px;
+    font-family: sans-serif; /*Establece la fuente del texto*/
+    font-weight: bold; /*Establece el grosor de la fuente*/
+    padding-left: 12px;
+}
+
+nav{ /*Estilo de la etiqueta nav*/
+    width: 50%;
+    margin: 32px;
+    display: inline-flex; /*Establece un contenedor en línea flexible*/
+    justify-content: space-around; 
+}
+
+nav a{ /*Estilo de la etiqueta a*/
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
+
+.home{ /*Estilo de la clase home*/
+    text-align: center; 
+    position: relative; 
+    z-index: 1; 
+    display: flex;
+    flex-direction: column; /*Establece la dirección de los elementos flexibles*/
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/cachorro2.jpg");
+    background-size: cover; /*Establece el tamaño de la imagen de fondo*/
+}
+
+.home::after{ /*Estilo de la clase home after*/
+    content: "";
+    top: 0; /*Establece la parte superior de un borde*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    z-index: -1; 
+    background: rgba(0, 0, 0,0.668);
+}
+
+.home h1{ /*Estilo de la etiqueta h1*/
+    margin-top: 30vh;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 45px;
+    color: white;
+    text-transform: uppercase; /*Transforma el texto a mayúsculas*/
+    text-shadow: 3px 3px black;
+}
+
+.home span{ /*Estilo de la etiqueta span*/ 
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  text-transform: capitalize; /*Transforma el texto en mayúsculas*/ 
+  text-shadow: 3px 3px black; /*Establece la sombra del texto*/
+}
+
+.actions{ /*Estilo de la clase actions*/
+    display: block; /*Establece un contenedor de bloque*/
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.actions button{ /*Estilo de la etiqueta button*/
+    width: 200px;
+    height: 50px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+#btn1{ /*Estilo de la id btn1*/
+    background-color: #00a2ff;
+    border: none; 
+}
+
+#btn1:hover{ /*Estilo de la id btn1 hover*/
+    cursor: pointer;
+    background-color: transparent; /*Color de fondo transparente*/
+    border: 2px solid white; /*Establece el borde del botón*/
+}
+
+#btn2{ /*Estilo de la id btn2*/
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#btn2:hover{ /*Estilo de la id btn2 hover*/
+    cursor: pointer;
+    background-color: #00a2ff;
+    border: none;
+}
+
+#btn1 a , #btn2 a{ /*Estilo de la id btn1 a y btn2 a*/
+    text-decoration: none;
+    color: white;
+}
+
+/*seccion Acerca de nosotros*/
+
+.about{ /*Estilo de la clase about*/
+  width: 100%;
+  background-color:  rgb(145, 245, 252); /*Color de fondo*/
+}
+
+.title{ /*Estilo de la clase title*/
+  padding: top 100%; /*Establece el relleno superior de un elemento*/
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px; /*Establece el margen inferior de un elemento*/
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+hr{ /*Estilo de la etiqueta hr*/
+  display: block; 
+  margin: 0 auto; 
+  width: 50px;
+  border: 2px solid #00a2ff; 
+  border-radius: 2px; /*Establece el radio de las esquinas de un elemento*/
+  
+}
+
+.descripcion{ /*Estilo de la clase descripcion*/
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.info{ /*Estilo de la clase info*/
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between; /*Establece la alineación de los elementos flexibles*/
+}
+
+.img-group img{ /*Estilo de la clase img-group img*/
+  margin-left: 20px;
+  width: 470px;
+}
+
+.info-group{ /*Estilo de la clase info-group*/
+  margin: 0px 20px;
+
+}
+
+.info-group h4{ /*Estilo de la clase info-group h4*/
+  text-align: left;
+  font-size: 30px;
+  color: rgb(44, 43, 43);
+  font-family: sans-serif;
+  padding-bottom: 10px; /*Establece el relleno inferior de un elemento*/
+}
+
+.info-group p{ /*Estilo de la clase info-group p*/
+  margin-top: 10px; /*Establece el margen superior de un elemento*/
+  padding: 10px 0px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+#btn-about{ /*Estilo de la id btn-about*/
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 8px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background-color: #00a2ff;
+  color: white;
+}
+
+.card{ /*Estilo de la clase card*/
+  margin: 20px;
+  width: 200px;
+  border-radius: 7px;
+  background-color: rgb(250, 166, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.card-img-top{ /*Estilo de la clase card-img-top*/
+  view-timeline: --imagen1;
+  view-timeline-axis: block;
+  animation-timeline: --imagen1;
+  animation-name: show;
+  width: 50%;
+  border-radius: 10px;
+  
+}
+
+.card-title{ /*Estilo de la clase card-title*/
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.card-body{ /*Estilo de la clase card-body*/
+  margin: 12px;
+  padding: 10px;
+}
+
+.card-text{ /*Estilo de la clase card-text*/
+  font-size: 18px;
+  text-align: justify; /*Alinea el texto justify*/
+  text-align: center; 
+}
+
+.btn btn-primary{ /*Estilo de la clase btn btn-primary*/
+  background-color: #00a2ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; /*Establece un contenedor en línea*/
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+
+@keyframes pulse{ /*Animación de la clase pulse*/
+    
+    0%{
+      transform: scale(.99);
+      box-shadow:0 0 0 0 rgba(256,256, 256, .1);
+    }
+  }
+  @keyframes pulse{ /*Animación de la clase pulse*/
+    70%{
+      transform: scale(1); /*Establece una escala de transformación para un elemento*/
+      box-shadow:0 0 0 25px rgba(256,256, 256,0); /*Establece la sombra de un elemento*/
+    }
+  }
+  @keyframes pulse{ /*Animación de la clase pulse*/
+    100%{
+      transform: scale(.99);
+      box-shadow:0 0 0 0 rgba(256,256, 256,0);
+    }
+  }
+
+/* Para dispositivos de pantalla grande */
+@media only screen and (min-width: 601px) { /*Establece las reglas de estilo para los dispositivos de pantalla grande*/
+    .button-container { /*Estilo de la clase button-container*/
+        display: inline-block; /*Establece un contenedor en línea*/
+    }
+  }
+  
+  /* Para dispositivos de pantalla pequeña */ /*Establece las reglas de estilo para los dispositivos de pantalla pequeña*/
+  @media only screen and (max-width: 600px) { /*Establece las reglas de estilo para los dispositivos de pantalla pequeña*/
+    .button-container {
+        display: block;
+    }
+  }
+
+  @keyframes show{ /*Animación de la clase show*/
+    from{ /*Establece el estilo inicial de un elemento*/
+      opacity: 0;
+      scale: 25%;
+    }
+    to{ /*Establece el estilo final de un elemento*/
+      opacity: 1;
+      scale: 100%;
+    }
+  }
